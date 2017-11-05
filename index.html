@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form action="calculator.php" method="get">
+    Indtast talværdier:
+    <input type="number" name="input1" value="<? $input1 ?>"/>
+    <select name="operations">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name="input2" value="<? $input2 ?>"/>
+
+    <input type="submit" name="submit" value="="/>
+    <?= $result ?>
+</form>
+</body>
+</html>
